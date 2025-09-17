@@ -1,0 +1,67 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "spacing": 10,
+    "modules-left": ["clock", "sway/workspaces", "pulseaudio"],
+    "modules-center": ["cpu", "network", "memory", "sway/language"],
+    "modules-right": ["custom/power", "custom/firefox"],
+    
+    "clock": {
+        "format": " {:%H:%M:%S}",
+        "format-alt": " {:%Y-%m-%d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
+    },
+    
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "󰋎 {volume}%",
+        "format-muted": "Muted",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+    },
+    
+    "cpu": {
+        "format": "󰍛 {usage}%",
+        "tooltip": false,
+        "interval": 2
+    },
+    
+    "memory": {
+        "format": " {percentage}%",
+        "tooltip": false,
+        "interval": 2
+    },
+    
+    "sway/language": {
+        "format": "Lang {}",
+        "tooltip": false
+    },
+    
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "~/.config/waybar/scripts/power-menu.sh",
+        "tooltip": false
+    },
+    
+    "custom/firefox": {
+        "format": "󰈹",
+        "on-click": "firefox",
+        "tooltip": false
+    }
+}

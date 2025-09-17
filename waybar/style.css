@@ -1,0 +1,76 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* All modules styling */
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#language,
+#custom-power,
+#custom-firefox {
+    padding: 0 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effects */
+#workspaces button:hover,
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#language:hover,
+#custom-power:hover,
+#custom-firefox:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+
+/* Workspace specific styling */
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#workspaces button.focused {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#workspaces button.urgent {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* Network states */
+#network.disconnected {
+    color: #f53c3c;
+}
+
+/* Pulseaudio muted state */
+#pulseaudio.muted {
+    color: #f53c3c;
+}
