@@ -1,7 +1,7 @@
 ### How to use:
 - install packages
 ```
-sudo pacman -Sy sway swaybg foot waybar wofi fastfetchhttps://github.com/MalikHw/sway-dot-file
+sudo pacman -Sy sway swaybg foot waybar wofi fastfetch
 ```
 - clone repo
 ```
