@@ -1,0 +1,33 @@
+# Mako notification daemon configuration
+# Place this file at: ~/.config/mako/config
+
+# Positioning
+anchor=top-center
+layer=overlay
+
+# Appearance
+background-color=#000000
+text-color=#ffffff
+border-color=#ffffff
+border-size=3
+border-radius=0
+
+# Typography
+font=font.ttf 12
+markup=1
+
+# Dimensions
+width=400
+height=100
+margin=10
+padding=15
+
+# Behavior
+default-timeout=5000
+
+# Progress bar (if needed)
+progress-color=#ffffff
+
+# Format - title uses default font size, body uses smaller
+font=Pixel Operator 12
+format=<b>%s</b>\n<span font="Pixel Operator 10">%b</span>

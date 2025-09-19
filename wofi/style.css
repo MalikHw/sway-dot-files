@@ -1,26 +1,30 @@
 window {
 margin: 0px;
 border: 1px solid #928374;
-background-color: #002b36;
+background-color: #000000;
+font-family: "Pixel Operator";
+font-weight: bold;
 }
 
 #input {
 margin: 5px;
 border: none;
-color: #839496;
-background-color: #073642;
+color: #ffffff;
+background-color: #000000;
+font-family: "Pixel Operator";
+font-weight: bold;
 }
 
 #inner-box {
 margin: 5px;
 border: none;
-background-color: #002b36;
+background-color: #000000;
 }
 
 #outer-box {
 margin: 5px;
 border: none;
-background-color: #002b36;
+background-color: #000000;
 }
 
 #scroll {
@@ -32,8 +36,21 @@ border: none;
 margin: 5px;
 border: none;
 color: #839496;
+font-family: "Pixel Operator";
+font-weight: bold;
 }
 
 #entry:selected {
-background-color: #073642;
+border: 1px solid #ffffff;
+background-color: transparent;
+padding-left: 24px;
+}
+
+#entry:selected::before {
+content: "󰋑";
+color: #ff0000;
+font-size: 16px;
+margin-right: 8px;
+position: absolute;
+left: 4px;
 }
