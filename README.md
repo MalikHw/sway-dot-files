@@ -1,7 +1,7 @@
 ### How to use:
 - install packages
 ```
-sudo pacman -Sy sway swaybg foot waybar wofi fastfetch
+sudo pacman -Sy sway swaybg foot waybar wofi fastfetch mako
 ```
 - clone repo
 ```
@@ -12,6 +12,8 @@ Install
 ```
 mkdir ~/.config
 cp * ~/.config/ -r
+sudo cp font.ttf /usr/share/fonts/TTF/pixeloperatorbold.ttf
+sudo fc-cache -fv
 ```
 
 for any issues you can open an issue
