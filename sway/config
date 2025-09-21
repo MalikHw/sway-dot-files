@@ -6,6 +6,8 @@
 seat * xcursor_theme miku-cursor-linux 39 
 for_window [app_id=".*"] floating enable
 output * bg ~/.config/sway/wallpaper.png fill
+exec mako
+exec kdeconnectd
 
 ### Variables
 #
