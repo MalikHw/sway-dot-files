@@ -5,11 +5,11 @@
     "spacing": 10,
     "modules-left": ["clock", "sway/workspaces", "pulseaudio"],
     "modules-center": ["cpu", "network", "memory", "sway/language"],
-    "modules-right": ["custom/power", "custom/firefox"],
+    "modules-right": ["custom/kdeconnect", "custom/firefox", "custom/power"],
     
     "clock": {
         "format": " {:%H:%M:%S}",
-        "format-alt": " {:%Y-%m-%d}",
+        "format-alt": "󰃭 {:%Y-%m-%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "interval": 1
     },
@@ -50,6 +50,12 @@
     
     "sway/language": {
         "format": "Lang {}",
+        "tooltip": false
+    },
+    
+    "custom/kdeconnect": {
+        "format": "",
+        "on-click": "kdeconnect-app",
         "tooltip": false
     },
     

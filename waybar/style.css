@@ -43,6 +43,7 @@ window#waybar.hidden {
 #pulseaudio:hover,
 #language:hover,
 #custom-power:hover,
+#custom-kdeconnect:hover,
 #custom-firefox:hover {
     background-color: rgba(128, 128, 128, 0.3);
     border-radius: 5px;
